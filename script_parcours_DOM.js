@@ -13,3 +13,7 @@ console.log(thirdElemUrl);
 // Total number of element with class name: compte-moi
 const compteMoi = document.getElementsByClassName("compte-moi").length;
 console.log(compteMoi);
+
+// Total number of <li> elementswith class name: compte-moi
+const liCompteMoi = document.querySelectorAll("li.compte-moi").length;
+console.log(liCompteMoi);
