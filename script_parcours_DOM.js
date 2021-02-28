@@ -17,3 +17,7 @@ console.log(compteMoi);
 // Total number of <li> elementswith class name: compte-moi
 const liCompteMoi = document.querySelectorAll("li.compte-moi").length;
 console.log(liCompteMoi);
+
+// Total number of li elements located in a ol with class name : compte-moi
+const liInOl = document.querySelectorAll("ol>li.compte-moi").length;
+console.log(liInOl);
