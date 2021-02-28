@@ -68,3 +68,22 @@ const changeCardText = () => {
 changeLogoName();
 
 // Modification #7:
+const changeViewButton = () => {
+    let parent = document.querySelectorAll("div.btn-group");
+    parent.forEach((div, i) => {
+        let child = div.firstElementChild;
+        child.classList.remove("btn-outline-secondary");
+        child.classList.add("btn-success");
+    })
+}
+changeViewButton();
+
+// Modification #8:
+const addRow = () => {
+    let row1 = document.querySelectorAll("div.album")[0].getElementsByClassName("container")[0].getElementsByClassName("row")[0];
+	row1.insertAdjacentHTML('afterend', '<div class="row"></div>');
+	row2 =  document.querySelectorAll("div.album")[0].getElementsByClassName("container")[0].getElementsByClassName("row")[1];
+	let thirdCard = row1.childNodes[5];
+	row2.appendChild(thirdCard);
+}
+addRow();
