@@ -46,3 +46,25 @@ const deleteLastCards = () => {
 		parent.removeChild(child);
     }
 }
+deleteLastCards();
+
+// Modification #6:
+const changeCardText = () => {
+    let cardText = document.querySelectorAll("p.card-text");
+    for(i = 0; i < 3; i++) {
+        switch(i) {
+            case 0:
+            cardText[i].textContent = "L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web";
+            break ;
+            case 1:
+            cardText[i].textContent = "Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML";
+            break ;
+            case 2:
+            cardText[i].textContent = "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs. C'est un langage orienté objet à prototype.";
+            break ;
+        }
+    }
+}
+changeLogoName();
+
+// Modification #7:
