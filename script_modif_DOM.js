@@ -7,3 +7,15 @@ const changeTitle = (str) => {
     let subTitle = document.querySelectorAll("p.lead")[0].textContent = str_2;
 };
 changeTitle();
+
+const changeCallToAction = () => {
+    //change text
+    const callToAction = document.querySelectorAll("a.btn.btn-primary.my-2")[0].firstChild.textContent = "Ok je veux tester !";
+    const callToAction_2 = document.querySelectorAll("a.btn.btn-secondary.my-2")[0].firstChild.textContent = "Non Merci";
+    // add url
+    const addHref = document.querySelectorAll("a.btn.btn-primary.my-2")[0];
+    const addHref_2 = document.querySelectorAll("a.btn.btn-secondary.my-2")[0];
+    addHref.setAttribute("href", "http://www.thehackingproject.org");
+    addHref_2.setAttribute("href", "https://www.pole-emploi.fr/accueil/");
+};
+changeCallToAction();
