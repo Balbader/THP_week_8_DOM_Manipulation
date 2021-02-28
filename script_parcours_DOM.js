@@ -21,3 +21,7 @@ console.log(liCompteMoi);
 // Total number of li elements located in a ol with class name : compte-moi
 const liInOl = document.querySelectorAll("ol>li.compte-moi").length;
 console.log(liInOl);
+
+// Fetch first li element content. li is hidden.
+const hiddenLi = document.querySelectorAll("div>ul")[1].querySelector("li").innerHTML;
+console.log(hiddenLi);
