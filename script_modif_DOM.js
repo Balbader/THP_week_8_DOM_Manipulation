@@ -27,3 +27,22 @@ const changeLogoName = () => {
     logoName.style.fontSize = "2em";
 }
 changeLogoName();
+
+// Modification #4:
+const populateImages = () => {
+    let imagesArray = ["https://img.icons8.com/color/480/000000/html-5.png", "https://img.icons8.com/color/480/000000/css3.png", "https://img.icons8.com/color/480/000000/javascript.png", "https://img.icons8.com/color/480/000000/ruby-programming-language.png", "https://img.icons8.com/color/480/000000/bootstrap.png", "https://img.icons8.com/color/480/000000/github.png", "http://jeudisdulibre.be/wp-content/uploads/2014/02/Ruby_on_Rails-logo.png", "https://avatars2.githubusercontent.com/u/25484553?s=200&v=4", "https://img.icons8.com/color/480/000000/heroku.png"];
+    let arrImages = document.querySelectorAll("img.card-img-top");
+    imagesArray.forEach((value, index) => {
+        arrImages[index].src = value;
+    });
+}
+populateImages();
+
+// Modification #5:
+const deleteLastCards = () => {
+    for(i = 0; i <= 6; i++) {
+        let parent = document.querySelectorAll("div.album")[0].getElementsByClassName("container")[0].getElementsByClassName("row")[0];
+		let child = parent.lastChild;
+		parent.removeChild(child);
+    }
+}
